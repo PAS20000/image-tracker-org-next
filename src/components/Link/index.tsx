@@ -36,7 +36,7 @@ const Link = ({
     
     if (target === '_blank') {
         return (
-            <a href={href} target={target} title={title} onClick={onClick}
+            <NextLink href={href} target={target} title={title} onClick={onClick}
                 download={download}
                 className={css[`${Class}-${className}`]} rel={noFollow ? 'nofollow' : 'dofollow'}>
                 {icon ? 
@@ -51,7 +51,7 @@ const Link = ({
                         {children} <FaExternalLinkAlt />
                     </span> 
                 }
-            </a>
+            </NextLink>
         )
     } else {
         return (

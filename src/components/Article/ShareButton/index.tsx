@@ -9,13 +9,12 @@ const ShareButton = () => {
     const { setIsOpen } = usePortalCTX()
 
     const open = () => {
-        setIsOpen(current => current.share ? 
-            { 
-                share : false 
-            } : { 
-                share : true 
+        setIsOpen(current => {
+            return {
+                ...current,
+                share : true
             }
-        )
+        })
     }
 
     return (

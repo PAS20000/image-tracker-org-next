@@ -2,6 +2,7 @@ import * as React from 'react'
 import * as ReactIFA from 'react-icons/fa'
 import Modal from '../../Modal'
 import css from './index.module.css'
+import NextLink from 'next/link'
 
 const ShareModal = () => {
    const copy = (text : string) => {
@@ -11,18 +12,18 @@ const ShareModal = () => {
    return (
         <Modal targetClose='share' title='Share Image Tracker'>
             <div className={css['container-links']}>
-                <a href='https://twitter.com' target='_blank' className={css['twitter']}>
+                <NextLink href='https://twitter.com' target='_blank' className={css['twitter']}>
                     <ReactIFA.FaTwitter />
-                </a>
-                <a href='https://web.whatsapp.com/' target='_blank' className={css['whatsapp']}>
+                </NextLink>
+                <NextLink href='https://web.whatsapp.com/' target='_blank' className={css['whatsapp']}>
                     <ReactIFA.FaWhatsapp />
-                </a>
-                <a href='https://web.telegram.org' target='_blank' className={css['telegram']}>
+                </NextLink>
+                <NextLink href='https://web.telegram.org' target='_blank' className={css['telegram']}>
                     <ReactIFA.FaTelegramPlane />
-                </a>
-                <a href='https://www.instagram.com/' target='_blank' className={css['instagram']}>
+                </NextLink>
+                <NextLink href='https://www.instagram.com/' target='_blank' className={css['instagram']}>
                     <ReactIFA.FaInstagram />
-                </a>
+                </NextLink>
             </div>
             <div className={css['container-label-video']}>
                 <iframe 
