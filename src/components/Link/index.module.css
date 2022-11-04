@@ -1,0 +1,131 @@
+@keyframes Rotate {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform : rotate(360deg);
+    }
+}
+
+@keyframes RotateY {
+    from {
+        transform: RotateY(0deg);
+    }
+    to {
+        transform: RotateY(360deg);
+    }
+}
+
+.link-dark-default {
+    transition: 0.5s;
+    color: var(--color-blue-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-dark-default:hover {
+    transition: 0.5s;
+    color: var(--color-purple-dark);
+    text-decoration: underline;
+}
+
+.link-light {
+    transition: 0.5s;
+    color: var(--color-blue-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-light:hover {
+    transition: 0.5s;
+    color: var(--color-purple-light);
+    text-decoration: underline;
+}
+
+.link-dark-nav {
+    transition: 0.5s;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-dark-nav-selected {
+    transition: 0.5s;
+    color: var(--color-purple-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-dark-nav:hover {
+    transition: 0.5s;
+    color: var(--color-purple-dark);
+    text-decoration: underline;
+}
+
+.link-light-nav {
+    transition: 0.5s;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-light-nav-selected {
+    transition: 0.5s;
+    color: var(--color-purple-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-light-nav:hover {
+    transition: 0.5s;
+    color: var(--color-purple-light);
+    text-decoration: underline;
+}
+
+.link-icon {
+   display: flex;
+   justify-content: center;
+}
+
+.link-dark-about {
+    transition: 0.5s;
+    display: flex;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    border: var(--border);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.link-dark-about:hover {
+    transition: 0.5s;
+    background: var(--color-purple-dark);
+    color: var(--color-text-dark-1);
+    transform: scale(1.1);
+}
+
+.link-dark-about:hover svg , .link-light-about:hover svg  {
+    animation : Rotate 1s infinite;
+}
+
+.link-light-about {
+    transition: 0.5s;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+    border: var(--border);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+.link-light-about:hover {
+    transition: 0.5s;
+    background: var(--color-text-light);
+    color: var(--color-bg-light-1);
+    transform: scale(1.1);
+}

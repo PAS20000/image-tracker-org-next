@@ -1,0 +1,27 @@
+.container-list h3 {
+    margin: 5px;
+}
+
+.container-list ul {
+    margin: 15px 20px;
+}
+
+.container-list li {
+    margin: 20px;
+}
+
+.goal-on-patreon {
+    transition: 0.5s;
+    padding: 6px;
+    margin: 10px;
+    background: var(--color-bg-dark-2);
+    border-radius: 8px;
+    color: var(--color-text-dark);
+    border: solid 2px;
+    text-decoration: none;
+}
+
+.goal-on-patreon:hover {
+   transition: 0.5s;
+   background: var(--color-purple-dark);
+}

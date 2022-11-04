@@ -1,0 +1,14 @@
+@keyframes Rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360);
+    }
+}
+
+.logo {
+    animation: Rotate 1s infinite;
+    width: 100%;
+    height: 100%;
+}

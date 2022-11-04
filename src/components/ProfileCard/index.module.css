@@ -1,0 +1,93 @@
+.container {
+    transition: 0.6s;
+    border-radius: 8px;
+    background: var(--color-bg-dark-2);
+    transform: translate(6%, 25%);
+    display: grid;
+    grid-template-columns: 1fr 0.12fr 1fr;
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+.card {
+    transition: 0.6s;
+    border-radius: 8px 0px 0px 8px;
+    width: 100%;
+    height: 66vh;
+    background-image: url("/orichalcum-back.webp");
+    filter: contrast(2);
+    background-repeat: round;
+}
+
+.avatar {
+    position: absolute;
+    transform: translate(35vh, 18vh);
+}
+
+.avatar div {
+    background: var(--color-bg-dark-2);
+    border-radius: 8px;
+}
+
+.avatar img {
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.avatar img:hover {
+    transition: 0.6s;
+    filter: blur(6px);
+}
+
+.options {
+    text-align: center;
+}
+
+.header {
+    background-image: linear-gradient(var(--color-purple-dark), var(--color-purple-light));
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 0px 0px 50px;
+    color: var(--color-text-dark);
+    border: solid 2px;
+}
+
+.options button {
+    transition: 0.6s;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    margin: 10px;
+}
+
+.options button:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-purple-dark);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+      transition: 0.6s;
+      grid-template-columns: 0.6fr 0.1fr 1fr;
+    }
+}
+  
+@media only screen and (max-width: 700px) {
+      .container {
+        transition: 0.6s;
+        grid-template-columns: 1fr;
+        transform: translate(5%, 12%);
+        margin-bottom: 100px;
+      }
+      .avatar {
+        transform: translate(20vh, 20vh);
+      }
+      .card {
+        border-radius: 8px 8px 0px 0px;
+      }
+}

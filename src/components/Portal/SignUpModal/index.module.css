@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.container form {
+    background: var(--color-bg-dark-2);
+    height: max-content;
+}
+
+.box {
+    overflow: hidden;
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px var(--color-bg-dark-1))  brightness(60%);
+    transform-origin: 10% 0;
+}
+
+.oauth-container {
+  transition: 0.6s;
+  text-align: center;
+}
+
+.google {
+  transition: 0.6s;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.google:hover {
+  transition: 0.6s;
+  transform: scale(1.2);
+  color: var(--color-purple-dark);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    grid-template-rows: 1fr 1fr;
+  }
+}

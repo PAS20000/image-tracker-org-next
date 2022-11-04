@@ -1,0 +1,37 @@
+.title-dark {
+    text-align: center;
+    color : var(--color-text-dark);
+    font-size: 1.7rem;
+}
+
+.title-light {
+    text-align: center;
+    color : var(--color-text-light);
+}
+.title-dark svg,
+.title-light svg,
+.sub-title-dark svg,
+.sub-title-light svg,
+.h3 svg {
+    margin: -2px 5px;
+}
+
+.sub-title-dark {
+    text-align: center;
+    color : var(--color-text-dark);
+}
+
+.sub-title-light {
+    text-align: center;
+    color : var(--color-text-light);
+}
+
+.divider-dark {
+    margin: 15px;
+    border-bottom: solid 2px var(--color-text-dark);
+}
+
+.divider-light {
+    margin: 15px;
+    border-bottom: solid 2px var(--color-text-light);
+}

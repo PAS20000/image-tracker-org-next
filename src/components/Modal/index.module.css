@@ -1,0 +1,101 @@
+@keyframes ShowBack {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes ShowModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container-modal-head {
+    animation: ShowModal 0.4s ease-in;
+    position: fixed;
+    background: var(--color-bg-dark-2);
+    z-index: 11;
+    width: 60%;
+    height: 75%;
+    transform: translate(35%, 20%);
+    border-radius: 8px;
+    color: var(--color-text-dark);
+    border: solid 1px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.container-modal-background {
+    animation: ShowBack 0.6s ease-in;
+    position: fixed;
+    z-index: 10;
+    width: 105%;
+    height: 105%;
+    transform: translate(-15px);
+    background-image: url('https://imagetracker.org/media/utils/banner-image-tracker.webp');
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.modal-title-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-title-flex h2 {
+    transition: 0.6s;
+    color: var(--color-text-dark);
+    padding: 5px;
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'Fira Code';
+    text-align: center;
+}
+
+.modal-close {
+    transition: 0.6s;
+    position: absolute;
+    color: var(--color-text-dark);
+    background: transparent;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 3px 0px 0px 97%;
+}
+
+.modal-close:hover {
+    transition: 0.5s;
+    color: red;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .container-modal-head {
+        transition: 0.6s;
+        width: 95%;
+        height: 50%;
+        transform: translate(2.5%, 26%);
+    }
+    .modal-close {
+        margin: 3px 0px 0px 93%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container-modal-head {
+        transition: 0.6s;
+        width: 95%;
+        height: 78%;
+        transform: translate(2.5%, 20%);
+    }
+    .modal-close {
+        margin: 3px 0px 0px 95%;
+    }
+}

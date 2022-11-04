@@ -1,0 +1,91 @@
+.container-links {
+   display: flex;
+   justify-content: center;
+}
+
+.container-links a {
+    transition: 0.6s;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-bg-dark-2);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    border: solid 1px;
+    color: var(--color-text-dark);
+}
+
+.container-links > .whatsapp > svg,
+.container-links > .instagram > svg {
+    transform: translate(0px, -2px);
+}
+
+.container-links > .telegram > svg {
+    transform: translate(-2px, -2px);
+}
+
+.container-links > .twitter:hover  {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-blue-dark);
+}
+
+.container-links > .telegram:hover  {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-blue-dark);
+}
+
+.container-links > .whatsapp:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-green-dark);
+}
+
+.container-links > .instagram:hover  {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-purple-dark);
+}
+
+.container-label-video {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-label-video > div > label {
+    transition: 0.6s;
+    padding: 10px;
+    background: var(--color-bg-dark-2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container-label-video > div > label:hover {
+    transition: 0.6s;
+    background: var(--color-purple-dark);
+}
+
+.container-label-video > div > label > span {
+   color: var(--color-text-dark);
+   background: transparent;
+   border: none;
+   font-size: 1rem;
+   text-align: center;
+   width: 100%;
+}
+
+.container-label-video > div > label > span > svg {
+    transform: translate(0px, 2px);
+}
+
+.container-label {
+    padding: 10px;
+}
+
+.container-label > label {
+   margin: 10px;
+   display: grid;
+}

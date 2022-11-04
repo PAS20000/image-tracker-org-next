@@ -1,0 +1,239 @@
+@keyframes Rotate {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform : rotate(360deg);
+    }
+}
+
+@keyframes RotateY {
+    from {
+        transform: RotateY(0deg);
+    }
+    to {
+        transform: RotateY(360deg);
+    }
+}
+
+@keyframes Show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-container-dark-red a, 
+.card-container-light-red a, 
+.card-container-dark-yellow a, 
+.card-container-light-yellow a, 
+.card-container-dark-green a, 
+.card-container-light-green a,
+.card-container-dark-blue a, 
+.card-container-light-blue a,
+.card-container-light-purple a,
+.card-container-dark-purple a {
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px;
+}
+
+.card-container-dark-red a:hover {
+    transition: 0.5s;
+    color : var(--color-text-dark);
+    background: var(--color-red-dark);
+}
+
+.card-container-light-red a:hover {
+    transition: 0.5s;
+    color : var(--color-text-light);
+    background: var(--color-red-light);
+}
+
+.card-container-dark-yellow a:hover {
+    transition: 0.5s;
+    color : var(--color-text-dark);
+    background: var(--color-yellow-dark);
+}
+
+.card-container-light-yellow a:hover {
+    transition: 0.5s;
+    color : var(--color-text-light);
+    background: var(--color-yellow-light);
+}
+
+.card-container-dark-green a:hover {
+    transition: 0.5s;
+    color : var(--color-text-dark);
+    background: var(--color-green-dark);
+}
+
+.card-container-light-green a:hover {
+    transition: 0.5s;
+    color : var(--color-text-light);
+    background: var(--color-green-light);
+}
+
+.card-container-dark-blue a:hover {
+    transition: 0.5s;
+    color : var(--color-text-dark);
+    background: var(--color-blue-dark);
+}
+
+.card-container-light-blue a:hover {
+    transition: 0.5s;
+    color : var(--color-text-light);
+    background: var(--color-blue-light);
+}
+
+.card-container-dark-purple a:hover {
+    transition: 0.5s;
+    color : var(--color-text-dark);
+    background: var(--color-purple-dark);
+}
+
+.card-container-light-purple a:hover {
+    transition: 0.5s;
+    color : var(--color-text-light);
+    background: var(--color-purple-light);
+}
+
+.card-container-dark-red,
+.card-container-dark-blue,
+.card-container-dark-green,
+.card-container-dark-yellow,
+.card-container-dark-purple  {
+    transition: 0.5s;
+    text-align: center;
+    color : var(--color-text-dark);
+    box-shadow: 2px 2px 10px;
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 25px 15px;
+}
+
+.card-container-light-red,
+.card-container-light-blue,
+.card-container-light-green,
+.card-container-light-yellow,
+.card-container-light-purple {
+    transition: 0.5s;
+    text-align: center;
+    color : var(--color-text-light);
+    box-shadow: 2px 2px 10px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 25px 15px;
+}
+
+.card-container-dark-red:hover img,
+.card-container-dark-blue:hover img,
+.card-container-dark-green:hover img,
+.card-container-dark-yellow:hover img,
+.card-container-dark-purple:hover img,
+.card-container-light-red:hover img,
+.card-container-light-blue:hover img,
+.card-container-light-green:hover img,
+.card-container-light-yellow:hover img,
+.card-container-light-purple:hover img {
+    animation: 1s RotateY ease-in-out;
+}
+
+.card-container-dark-red:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-red-dark);
+}
+
+.card-container-dark-blue:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-blue-dark);
+}
+
+.card-container-dark-yellow:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-yellow-dark);
+}
+
+.card-container-dark-green:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-green-dark);
+}
+
+.card-container-dark-purple:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-purple-dark);
+}
+
+.card-container-light-red:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-red-dark);
+}
+
+.card-container-light-blue:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-blue-light);
+}
+
+.card-container-light-yellow:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-yellow-light);
+}
+
+.card-container-light-green:hover {
+    transition: 0.6s ease-out;
+    color : var(--color-green-light);
+}
+
+.card-info {
+    text-align: start;
+    margin: 10px;
+    display: grid;
+}
+
+.card-info div {
+    text-align: start;
+    margin: 10px 0px;
+    display: flex;
+}
+
+.card-info div.become-a-member {
+    justify-content: center;
+}
+
+.card-price-dark, .card-price-light {
+    padding: 15px;
+    font-size: 1.7rem;
+}
+
+.card-info svg {
+    font-size: 1.5rem;  
+}
+
+.card-container-light-yellow img {
+    filter: contrast(2);
+}
+
+.orichalcum-info-dark {
+    transition: 0.6s;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.orichalcum-info-dark:hover {
+    transition: 0.6s;
+    color: var(--color-blue-dark);
+}
+
+.info {
+    animation: Show 0.6s;
+    position: absolute;
+    padding: 10px;
+    background: var(--color-bg-dark-2);
+    border-radius: 8px;
+    border: solid 1px;
+    width:50%;
+    transform: translate(150px, -120px);
+    color: var(--color-text-dark);
+}

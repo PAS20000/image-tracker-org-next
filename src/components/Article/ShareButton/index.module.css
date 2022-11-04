@@ -1,0 +1,38 @@
+.share-button-dark {
+    transition: 0.6s ease-in-out;
+    padding: 10px;
+    transform: translate(5px, -4px);
+    background: var(--color-bg-dark-2);
+    border: solid 1px;
+    color: var(--color-text-dark);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.share-button-dark:hover {
+    transition: 0.6s ease-in-out;
+    box-shadow: var(--shadow);
+    color: var(--color-purple-dark);
+}
+
+.share-button-light {
+    transition: 0.6s ease-in-out;
+    padding: 10px;
+    transform: translate(5px, -4px);
+    color: var(--color-text-light);
+    box-shadow: var(--shadow);
+    background: var(--color-bg-light-2);
+    border: solid 1px;
+    color: var(--color-text-light);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.share-button-light:hover {
+    transition: 0.6s ease-in-out;
+    box-shadow: var(--shadow);
+    color: var(--color-purple-light);
+}

@@ -1,0 +1,41 @@
+.header-container {
+    padding: 5px;
+    text-align: center;
+}
+
+.header-goal {
+   margin: 5px 0px;
+}
+
+.icon svg {
+   width: 25px;
+   height: 25px;
+}
+
+.goal-values {
+    margin: 10px;
+    font-family: 'Fira Code';
+}
+
+.background-progress-bar {
+    border: solid 1px;
+    border-radius: 8px;
+    background-color: var(--color-bg-dark-2);
+   
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.goal-values-init {
+    color: var(--color-green-dark);
+}
+
+.goal-values-billing-target {
+    color: var(--color-red-dark);
+}
+
+.list-title-icon svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}

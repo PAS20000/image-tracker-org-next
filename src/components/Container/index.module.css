@@ -1,0 +1,41 @@
+.container-dark {
+   margin: 4% 2%;
+   padding: 50px 20px;
+   border-radius: 8px;
+   background-image: linear-gradient(
+        75deg,
+        var(--color-bg-dark-1), 
+        var(--color-bg-dark-2)
+   );
+   color: var(--color-text-dark);
+}
+
+@media only screen and (max-width: 600px) {
+   .container-dark, .container-light {
+      margin: 10px auto;
+   }
+}
+.container-light {
+   margin: 4% 1.5%;
+   padding: 50px 20px;
+   border-radius: 8px;
+   background-image: linear-gradient(
+        75deg,
+        var(--color-bg-light-1), 
+        var(--color-bg-light-2)
+   );
+   color: var(--color-text-light);
+}
+
+.shadow {
+   box-shadow : var(--shadow);
+}
+
+
+.shadow-red {
+   box-shadow : 2px 2px 10px var(--color-red-dark);
+}
+
+.border {
+   border : var(--border);
+}

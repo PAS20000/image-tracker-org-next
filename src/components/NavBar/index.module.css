@@ -1,0 +1,174 @@
+.nav-dark {
+    transition: 0.6s;
+    box-shadow: var(--shadow) var(--color-text-light);
+    color: var(--color-text-dark);
+    width : 100%;
+    display : grid;
+    background : var(--color-bg-dark-1);
+    display : flex;
+    justify-content : space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-dark img {
+    transition: 0.6s;
+    margin: 8px;
+}
+
+.nav-light {
+    transition: 0.6s;
+    box-shadow: var(--shadow) var(--color-text-light);
+    color: var(--color-light-text);
+    width : 100%;
+    display : grid;
+    background : var(--color-bg-light-1);
+    display : flex;
+    justify-content : space-between;
+}
+
+.link {
+    transition: 0.6s;
+    margin: 15px;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-purple-dark);
+}
+
+.link-selected {
+    transition: 0.6s;
+    margin: 15px;
+    color: var(--color-purple-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-selected {
+    transition: 0.6s;
+    color: var(--color-purple-dark);
+}
+
+.links {
+    transition: 0.6s;
+    width: 50%;
+    margin: 10px;
+    display : flex;
+    justify-content : space-between;
+}
+
+.avatar-container a {
+    transition: 0.6s;
+}
+
+.avatar-container a:hover {
+    transition: 0.6s;
+    filter: blur(2px);
+}
+
+.avatar-container {
+    transition: 0.6s;
+    display: flex;
+}
+
+.avatar-container div {
+    transition: 0.6s;
+    display: flex;
+    margin: 25px 10px 0px;
+}
+
+.avatar-container div svg {
+    transition: 0.6s;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.gifts::before, .messages::before {
+    transition: 0.6s;
+    content: attr(data-count);
+    background: var(--color-red-light);
+    color: var(--color-text-dark);
+    transform: translate(0px,13px);
+    width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    border: solid 1px;
+}
+
+.avatar-container div span {
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.avatar-container div span:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: var(--color-purple-dark);
+}
+
+.action-container {
+   transition: 0.6s;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-right: 15px;
+}
+
+.action-container button {
+    transition: 0.6s;
+    text-transform: uppercase;
+    transition: 0.6s;
+    border-radius: 16px;
+    color: var(--color-dark-text);
+    background: transparent;
+    margin: 23px 30px;
+    height: 40%;
+    width: 80%;
+    border: solid 2px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Fira Code';
+    font-size: 0.8rem;
+}
+
+.action-container button.sign-up {
+    transition: 0.6s;
+    color: var(--color-text-dark);
+    background-image: linear-gradient(var(--color-purple-dark), var(--color-purple-light));
+    border : none;
+}
+
+.action-container button.sign-up:hover, .sign-in:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-dark {
+        transition: 0.6s;
+        font-size: 0.7rem;
+    }
+    .link {
+        transition: 0.6s;
+        margin: 15px 9px;
+    }
+    .nav-dark img {
+        transition: 0.6s;
+        margin: 10px 5px 0px;
+    }
+
+    .action-container button {
+        transition: 0.6s;
+        margin: 20px 30px;
+    }
+  }

@@ -1,0 +1,101 @@
+.container-active, .container-disabled {
+    transition: 0.6s;
+    padding: 10px;
+    font-family: 'Fira Code';
+    color: var(--color-text-dark);
+    text-align: start;
+}
+
+.container-disabled  {
+    opacity: 0.1;
+}
+
+.container-active label, .container-disabled label {
+    position: absolute;
+    display: flex;
+    padding: 0px 5px 0px 5px;
+    background: var(--color-bg-dark-2);
+    transform: translate(5px, -13px);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    height: 15px;
+}
+
+.label-content {
+    margin: -2px 0px;
+}
+
+.container-active:hover {
+    transition: 0.6s;
+    color: var(--color-purple-dark);
+}
+
+.container-active label svg, .container-disabled label svg {
+   margin-right: 5px;
+   margin-left: 2px;
+   font-size: 1rem;
+}
+
+.container-active input, .container-disabled input {
+    padding: 5px;
+    border-radius: 8px;
+    background: var(--color-bg-dark-2);
+    color: var(--color-text-dark);
+    font-family: 'Fira Code';
+    border: solid 1px;
+}
+
+.container-active input:focus {
+    outline: outset 2px var(--color-purple-dark);
+}
+
+.show-password {
+    transition: 0.6s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.show-password:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+}
+
+.error-container {
+    margin: 5px 5px 0px 5px;
+}
+
+.error-message {
+    display: none;
+}
+  
+/*.error-icon:hover + .error-message {
+    display: block;
+    color: var(--color-red-dark);
+    background-color: var(--color-bg-dark-1);
+    position: absolute;
+    z-index: 5;
+    padding: 5px;
+    border-radius: 8px;
+    transform: translate(-5px, -50px);
+}
+*/
+.input-container {
+    display: flex;
+}
+
+.input-container input {
+    width: 100%;
+}
+
+.input-password {
+    width: 50%;
+}
+
+.error-icon {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+   
+}
