@@ -103,14 +103,14 @@ const NavBar = () => {
                         /> 
                     </NextLink>
                     <div className={css['links']}>
-                        <NextLink href={href('/about/')} className={ClassEachPathName('/about')}>
-                            About us
-                        </NextLink>
-                        <NextLink href={href('/support/')} className={ClassEachPathName('/support')}>
-                            Support
+                        <NextLink href={href('/goals/')} className={ClassEachPathName('/goals')}>
+                            Goals
                         </NextLink>
                         <NextLink href={href('/signatures/')} className={ClassEachPathName('/signatures')}>
                             Signatures
+                        </NextLink>
+                        <NextLink href={href('/support/')} className={ClassEachPathName('/support')}>
+                            Support
                         </NextLink>
                     </div>
                 <>

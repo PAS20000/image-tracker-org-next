@@ -1,31 +1,22 @@
-import Picture from "../Picture"
+import NextImage from 'next/image'
 import css from './index.module.css'
 import * as React from 'react'
 
-type Path = {
-    desktop ?: string
-    mobile ?: string
+interface Props extends React.HTMLAttributes<HTMLSpanElement> {
+    w ?: number
+    h ?: number
 }
 
-interface Props extends Path, React.HTMLAttributes<HTMLSpanElement> {
-    w ?: string
-    h ?: string
-}
-
-const Avatar = ({ h, w, desktop, mobile, onClick } : Props) => {
+const Avatar = ({ h, w, onClick } : Props) => {
     return (
         <span className={css['avatar']} onClick={onClick}>
-            <Picture
+            <NextImage
                 alt='avatar'
-                path={
-                    {
-                        desktop : desktop ?? '/default-avatar.png',
-                        mobile : mobile ?? '/default-avatar.png'
-                    }
-                }
+                src='/default-avatar.png'
                 title='avatar'
-                height={h ?? '50px'}
-                width={w ?? '50px'}           
+                height={h ?? 50}
+                width={w ?? 50}
+                sizes='100vw'        
             /> 
         </span>
     )

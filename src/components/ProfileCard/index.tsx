@@ -41,8 +41,8 @@ const ProfileCard = () => {
             <div className={css['card']} />
             <div className={css['avatar']}>
                 <Avatar 
-                    w='50%'
-                    h='50%'
+                    w={50}
+                    h={50}
                     onClick={ChangeAvatar}
                 />
             </div>

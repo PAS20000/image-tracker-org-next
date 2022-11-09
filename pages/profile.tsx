@@ -1,6 +1,6 @@
-import Footer from "../../src/components/Footer"
-import NavBar from "../../src/components/NavBar"
-import ProfileCard from "../../src/components/ProfileCard"
+import Footer from "../src/components/Footer"
+import NavBar from "../src/components/NavBar"
+import ProfileCard from "../src/components/ProfileCard"
 
 const Profile = () => {
 

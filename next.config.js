@@ -7,7 +7,8 @@ const nextConfig = {
   images: {
     domains : [
       'imagetracker.org'
-    ]
+    ],
+    unoptimized : true
   }
 }
 

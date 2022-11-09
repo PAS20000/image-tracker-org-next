@@ -106,7 +106,7 @@ const Card = ({
                     <FaHandshake /> &nbsp;
                    <p>Become a</p>
                 </div>
-                <Link href={`$${href}`} target='_blank' icon={icon} className='about' onClick={e => Open(e)}>
+                <Link href={`${href}`} target='_blank' icon={icon} className='about' onClick={e => Open(e)}>
                     {anchorText}
                 </Link>
            </div>
